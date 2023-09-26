@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@400;600&family=Roboto:wght@100;300;400;500;700&family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: Capitalize;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 90%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth; 
+}
+
+/* for styling side scroll bar */
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 5rem;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+/* Header and Navbar */
+.header-container {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.604);
+  padding: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: 100;
+
+}
+
+.header-container .navbar a:hover {
+  color: #ff1e00;
+  border-bottom: 0.3rem solid #ff1e00;
+  padding-bottom: 0.5rem;
+}
+
+.header-container .navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.header-container .navbar a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.logo {
+
+  font-family: 'Croissant One', cursive;
+  font-size: 32px;
+  font-weight: 1000;
+  color: white;
+}
+
+.header-container .icons div:hover {
+  color: #ff1e00;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.header-container .icons div {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+/* banner */
+
+.banner-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.5)), url('./assets/banner.jpg');
+  height: 900px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  /* gap: 200px; */
+  padding-top: 150px;
+}
+
+.banner-text {
+  width: 1200px;
+  /* height: 600px; */
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(224, 224, 224)); /* White gradient background */
+  padding: 20px;
+  border-radius: 15px;
+  padding-top: 100px;
+  margin-top: 290px; 
+  z-index: 1;
+
+}
+
+.banner-text h2 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.banner-text h2 span {
+  color: rgb(0, 0, 0);
+}
+
+
+.banner-text p {
+  color: black;
+  font-size: 20px;
+  
+}
+
+.banner-img {
+  height: 100%;
+  align-items:center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 40px;
+  z-index: 0;
+}
+.banner-img img {
+  max-width: 100%;
+  height: 750px;
+  overflow:hidden;
+}
+
+
+/* Qualification */
+.q-container {
+  padding: 80px;
+  background-color: black;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.604);
+}
+.q-container h1 {
+  font-family: 'Dela Gothic One', cursive;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: white;
+}
+.q-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 5fr)); 
+  gap: 40px; 
+}
+.edu,
+.skill,
+.achievement,
+.organization {
+  padding: 20px;
+  background-color: #fdfdfd00;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.604);
+  height: 450px;
+}
+.edu h2,
+.skill h2,
+.achievement h2,
+.organization h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  text-decoration:underline;
+  font-size: 28px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.edu-content{
+  padding: 10px;
+}
+.edu-content h3 {
+  font-size: 24px;
+  color: white;
+}
+.edu-content p {
+  font-size: 19px;
+  color: white;
+}
+.edu-content h5 {
+  font-size: 16px;
+  color: white;
+}
+.skill-content {
+  list-style: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+.skill-content li {
+  padding: 5px 0;
+}
+.achieve-content{
+  color: white;
+  padding: 10px;
+}
+.achieve-content h3 {
+  font-size: 20px;
+
+}
+.org-content {
+  color: white;
+  padding: 10px;
+}
+.org-content h3 {
+  font-size: 21px;
+}
+.org-content p{
+  font-size: 19px;;
+}
+
+
+
+
+/* contact */
+.contact-container {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.604);
+  padding: 80px;
+  background-color:  linear-gradient(rgba(255, 255, 255, 0), rgb(224, 224, 224));
+}
+.contact-container h1 {
+  font-family: 'Dela Gothic One', cursive;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.contact-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.contact-detail a{
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+.contact-detail address{
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+/* Social */
+
+.social-icons {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  justify-content: space-between;
+  gap: 40px;
+}
+.social h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  color: white;
+}
+.social-icons a {
+  padding-right: 30px;
+  padding-left: 30px;
+  color: rgb(255, 255, 255);
+}
+.social-icons a:hover {
+  color: red;
+}
+
+
+/* Projects */
+.projects {
+  background-color: rgb(0, 0, 0);
+  padding: 80px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.604);
+}
+.projects-container {
+  color: rgb(0, 0, 0);
+}
+.projects-container h1 {
+  font-family: 'Dela Gothic One', cursive;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.project-text h2{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: white;
+}
+.project-text p {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
+}
+.project-title {
+  color: rgb(255, 255, 255);
+}
+.slider-carousel {
+  /* height: 900px; */
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* RESPONSIVE */
+@media only screen and  (max-width: 768px) and (min-width:330px) {
+  #menu-btn{
+    display: inline-block;
+   }
+
+   .header-container .navbar {
+    position: absolute;
+    top: 9%;
+    right: 100%;
+    background: #c1adad;
+    flex-direction: column;
+    opacity: 85%;
+    width: 220px;
+    height: calc(100vh - 75px);
+    padding-top: 5px;
+    margin-top: 123px;
+  }
+
+.header-container .navbar a:hover {
+  color: #ffffff;
+  border-bottom: 0.3rem solid #ffffff;
+  padding-bottom: 0.5rem;
+  opacity: 100%;
+}
+.header-container .navbar.active {
+  right: 0;
+}
+
+.header-container .navbar a{
+  color: rgb(0, 0, 0);
+  display: block;
+  margin: 1rem;
+}
+
+/* banner */
+.banner-container {
+  background: linear-gradient(rgba(5, 134, 255, 0.3), rgba(35, 6, 6, 0.227)), url('./assets/banner_crop.jpg');
+  height: 900px;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 100px;
+  gap: 0;
+}
+.banner-text {
+  width: 300px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(224, 224, 224));
+  border-radius: 15px;
+  padding-top: 0;
+  margin-top: 50px;
+}
+.banner-text h2 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+.banner-text h2 span {
+  color: rgb(0, 0, 0);
+}
+.banner-text p {
+  color: black;
+  font-size: 16px;
+}
+.banner-img {
+  height: 100%;
+  align-items:center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 40px;
+}
+.banner-img img {
+  max-width: 100%; 
+  height: 400px;
+}
+
+
+
+.edu,
+.skill,
+.achievement,
+.organization{
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.604);
+
+}
+
+.edu h2, .skill h2, .achievement h2, .organization h2{
+  font-size: 24px;
+}
+.edu-content h3{
+  font-size: 18px;
+}
+.edu-content p {
+  font-size: 17px;
+}
+.skill-content {
+  font-size: 18px;
+}
+.achieve-content h3{
+  font-size: 18px;
+}
+.org-content h3{
+  font-size: 18px;
+}
+.org-content p{
+  font-size: 17px;
+}
+.q-container {
+  padding: 20px;
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.604);
+}
+
+.q-container h1 {
+  font-size: 32px;
+}
+.contact-container{
+  padding: 60px;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container h1 {
+  font-size: 32px;
+}
+.contact-detail a {
+  font-size: 18px;
+}
+.social-icons a {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.social-icons {
+  display: flex;
+  padding: 0;
+}
+.contact-detail address {
+  font-size: 18px;
+}
+.project-text p {
+  font-size: 16px;
+}
+.projects {
+  padding: 35px;
+}
+}
